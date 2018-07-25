@@ -25,8 +25,31 @@
   width: 100%;
   height: 18vh;
   margin: 1%;
-  border: 1px black solid;
+  /*border: 1px black solid;*/
 
 }
+#hassan{
+  transition: margin 3s;
+  transition: opacity 2s;
+}
 
-i
+#rex{
+transition: opacity 2s;
+transition: margin 2s;
+}
+
+#john{
+transition: opacity 2s;
+}
+
+.hide{
+  opacity: 0;
+}
+
+
+.centerhim{
+  margin-top:-140px;
+}
+.centerme{
+   margin-top: 170px;
+}

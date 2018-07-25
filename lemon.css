@@ -83,6 +83,7 @@ h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row
+
 }
 
 @media (max-width:56.25em) {
