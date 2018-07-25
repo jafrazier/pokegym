@@ -13,12 +13,12 @@
 .badge {
   width: 1%;
   height: 20vh;
-  border: 1px black solid;
+  border: 1px white solid;
 }
 .gym {
   width: 50%;
   height: 10vh;
-  border: 1px black solid;
+  border: 1px white solid;
   margin-bottom: 4%;
 }
 .inner {
