@@ -11,8 +11,10 @@ html {
 }
 
 *, :after, :before {
+
   margin: 1%;
   padding: 1%;
+
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
@@ -29,11 +31,13 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.6;
+
   letter-spacing: .01rem;
   text-align: center;
   background: url("stadium.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
 }
 
 b, strong {
@@ -51,9 +55,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 4.6rem;
+
   line-height: 1.2;
   text-align: center;
   color: white;
+
 }
 
 h2 {
@@ -89,6 +95,7 @@ h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row
+
 }
 
 @media (max-width:56.25em) {
@@ -734,3 +741,6 @@ thead th {
 
 .pb {
   padding-bottom: 2rem
+
+}
+
