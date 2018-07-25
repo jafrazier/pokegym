@@ -1,11 +1,9 @@
 
-
-
 trainers = {
   john:{
     pikachu: {
-      number: '25',
-      abilities: []
+      number: '25'
+
     },
     bulbasur: {
       number: '1',
@@ -15,37 +13,33 @@ trainers = {
     }
 
   },
-  rex:{
-    name: '',
-    pokemon1: {
-      pokename: '',
-      number: '',
-    },
-    pokemon2: {
-      pokename: '',
-      number: '',
-    },
-    pokemon3: {
-      pokename: '',
-      number: '',
+    rex:{
+      gengar: {
+        number: '94'
+      },
+      pidgeot: {
+        number: '18',
+      },
+      jigglypuff: {
+        number: '39',
     },
   },
-  hassan:{
-    name: '',
-    pokemon1: {
-      pokename: '',
-      number: '',
-    },
-    pokemon2: {
-      pokename: '',
-      number: '',
-    },
-    pokemon3: {
-      pokename: '',
-      number: '',
+    hassan:{
+      vaporeon: {
+        number: '721'
+      },
+      flareon: {
+        number: '452',
+      },
+      jolteon: {
+        number: '680',
     },
   }
 }
+function get(trainers) {
+
+}
+
 
 function get(name, pokemon) {
   var myName = trainers[name];
@@ -57,6 +51,7 @@ function get(name, pokemon) {
     if (this.readyState == 4 && this.status == 200) {
       var myObj = JSON.parse(this.responseText);
       console.log(myObj.name);
+
      var defense = myObj.stats[3].base_stat;
      var hp = myObj.stats[5].base_stat;
     var attack = myObj.stats[4].base_stat;
@@ -65,10 +60,12 @@ function get(name, pokemon) {
  console.log(attack);
 
 
+
   };
   xhttp.open('GET', 'https://pokeapi.co/api/v2/pokemon/'+ pokeNum +'/', true);
   xhttp.send();
 }
+
 
 
 
@@ -108,6 +105,7 @@ h.classList.add("hide");
 
 
 })
+
 
 
 
