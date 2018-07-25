@@ -1,43 +1,37 @@
 trainers = {
   john:{
-    pikachu: {
-      number: '25'
+    volcanion: {
+      number: '721'
     },
-    bulbasur: {
-      number: '1',
+    drapion: {
+      number: '452'
     },
-    char: {
-      number: '5',
+    doublade: {
+      number: '680'
     }
   },
   rex:{
     name: '',
     pokemon1: {
-      pokename: '',
-      number: '',
+      number: ''
     },
     pokemon2: {
-      pokename: '',
-      number: '',
+      number: ''
     },
     pokemon3: {
-      pokename: '',
-      number: '',
+      number: ''
     },
   },
   hassan:{
     name: '',
     pokemon1: {
-      pokename: '',
-      number: '',
+      number: ''
     },
     pokemon2: {
-      pokename: '',
-      number: '',
+      number: ''
     },
     pokemon3: {
-      pokename: '',
-      number: '',
+      number: ''
     },
   }
 }
@@ -51,6 +45,13 @@ function get(name, pokemon) {
     if (this.readyState == 4 && this.status == 200) {
       var myObj = JSON.parse(this.responseText);
       console.log(myObj.name);
+      // if (name ==) {
+      //
+      // } if (name ==) {
+      //
+      // } if (name ==) {
+      //
+      // }
     }
   };
   xhttp.open('GET', 'https://pokeapi.co/api/v2/pokemon/'+ pokeNum +'/', true);
