@@ -13,18 +13,20 @@
   <div class="container">
     <div class="row">
       <div class="column gym">
+        <h1>Pokegym</h1>
         <input type="button" value="Trainer1" class="selection" onclick="getTrainer1()">
         <input type="button" value="Trainer2" class="selection" onclick="getTrainer2()">
         <input type="button" value="Trainer3" class="selection" onclick="getTrainer3()">
       </div>
     </div>
-    <div class="row" id="train1">
+    <div class="row hidden" id="train1">
       <div class="column trainer">
+        <h2>NAME1</h2>
         <div class="row">
-          <div class="column inner trainerImg"> trainer1</div>
-          <div class="column inner ball" onclick="get("","")"></div>
-          <div class="column inner ball" onclick="get("","")"></div>
-          <div class="column inner ball" onclick="get("","")"></div>
+          <div class="column inner trainerImg one"></div>
+          <div class="column inner ball" onclick="get('john','volcanion')"></div>
+          <div class="column inner ball" onclick="get('john','drapion')"></div>
+          <div class="column inner ball" onclick="get('john','doublade')"></div>
         </div>
       </div>
       <div class="column info">
@@ -45,17 +47,18 @@
     </div>
     <div class="row hidden" id="train2">
       <div class="column trainer">
+        <h2>NAME2</h2>
         <div class="row">
-          <div class="column inner trainerImg">trainer2</div>
-          <div class="column inner ball" onclick="get("","")"></div>
-          <div class="column inner ball" onclick="get("","")"></div>
-          <div class="column inner ball" onclick="get("","")"></div>
+          <div class="column inner trainerImg two">trainer2</div>
+          <div class="column inner ball" onclick="get('rex','giratina')"></div>
+          <div class="column inner ball" onclick="get('rex','kartana')"></div>
+          <div class="column inner ball" onclick="get('rex','rufflet')"></div>
         </div>
       </div>
       <div class="column info">
         <div class="row">
           <div class="column inner stats">
-            <img src="" alt="" id="pokeimg2" >
+            <img src="" alt="" id="pokeimg2"class="pokepic" >
           </div>
           <div class="column inner stats"id="pokestats2" class="pokepic" >
             <p id="name2">NAME</p>
@@ -69,18 +72,19 @@
     </div>
     <div class="row hidden" id="train3">
       <div class="column trainer">
+        <h2>NAME3</h2>
         <div class="row">
-          <div class="column inner trainerImg">trainer3</div>
-          <div class="column inner ball" onclick="get("","")"></div>
-          <div class="column inner ball" onclick="get("","")"></div>
-          <div class="column inner ball" onclick="get("","")"></div>
+          <div class="column inner trainerImg three">trainer3</div>
+          <div class="column inner ball" onclick="get('hassan','salandit')"></div>
+          <div class="column inner ball" onclick="get('hassan','heatmor')"></div>
+          <div class="column inner ball" onclick="get('hassan','talonflame')"></div>
         </div>
 
       </div>
       <div class="column info">
         <div class="row">
-          <div class="column inner stats">.column
-            <img src="" alt="" id="pokeimg2" class="pokepic">
+          <div class="column inner stats">
+            <img src="" alt="" id="pokeimg3" class="pokepic">
           </div>
           <div class="column inner stats" id="pokestats">
             <p id="name3">NAME</p>
@@ -93,7 +97,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="column moreInfo"></div>
+      <div class="column moreInfo">
+        <h3>Description</h3>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
   </div>
   <script type="text/javascript" src="library.js">
