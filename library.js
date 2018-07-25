@@ -79,6 +79,7 @@ function get(name, pokemon) {
  j = document.getElementById("john");
  h = document.getElementById("hassan");
 
+
 h.addEventListener("click", function(){
 
 h.classList.add("centerme");
@@ -88,9 +89,6 @@ j.classList.add("hide");
 })
 
 
- r = document.getElementById("rex");
- j = document.getElementById("john");
- h = document.getElementById("hassan");
 
 j.addEventListener("click", function(){
 
@@ -100,9 +98,7 @@ h.classList.add("hide");
 
 })
 
- r = document.getElementById("rex");
- j = document.getElementById("john");
- h = document.getElementById("hassan");
+
 
 r.addEventListener("click", function(){
 

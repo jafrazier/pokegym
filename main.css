@@ -29,21 +29,26 @@
 
 }
 #hassan{
-  transition: margin 3s;
-  transition: opacity 2s;
+  transition: opacity 2s!important;
+  transition: margin 3s!important;
 }
 
 #rex{
-transition: opacity 2s;
-transition: margin 2s;
+transition: opacity 2s!important;
+transition: margin 2s!important;
+
 }
 
 #john{
-transition: opacity 2s;
+transition: opacity 2s!important;
 }
 
 .hide{
   opacity: 0;
+}
+
+.move{
+  display:none;
 }
 
 
