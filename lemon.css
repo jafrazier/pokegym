@@ -11,8 +11,8 @@ html {
 }
 
 *, :after, :before {
-  margin: 0;
-  padding: 0;
+  margin: 1%;
+  padding: 1%;
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
@@ -29,7 +29,8 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.6;
-  letter-spacing: .01rem
+  letter-spacing: .01rem;
+  text-align: center;
 }
 
 b, strong {
