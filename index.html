@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="lemon.css">
   <link rel="stylesheet" href="main.css">
   <title>pokegym</title>
@@ -11,78 +12,88 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="column gym">.column</div>
+      <div class="column gym">
+        <input type="button" value="Trainer1" class="selection" onclick="getTrainer1()">
+        <input type="button" value="Trainer2" class="selection" onclick="getTrainer2()">
+        <input type="button" value="Trainer3" class="selection" onclick="getTrainer3()">
+      </div>
     </div>
-    <div class="row">
+    <div class="row" id="train1">
       <div class="column trainer">
         <div class="row">
-          <div class="column inner">.column</div>
-          <div class="column inner" onclick="get("","")">.column</div>
-          <div class="column inner" onclick="get("","")">.column</div>
-          <div class="column inner" onclick="get("","")">.column</div>
+          <div class="column inner trainerImg"> trainer1</div>
+          <div class="column inner ball" onclick="get("","")"></div>
+          <div class="column inner ball" onclick="get("","")"></div>
+          <div class="column inner ball" onclick="get("","")"></div>
         </div>
       </div>
       <div class="column info">
         <div class="row">
-          <div class="column inner">
-            <img src="" alt="" id="pokeimg1">
+          <div class="column inner stats">
+            <img src="" alt="" id="pokeimg1" class="pokepic">
           </div>
-          <div class="column inner" id="pokestats1">
+          <div class="column inner stats" id="pokestats1">
             <p id="name1">NAME</p>
-            <p>HP:<span id="hp1"></span></p>
+            <p>HP:<span id="hp1">1</span></p>
             <p>ATK:<span id="atk1"></span></p>
             <p>DEF:<span id="def1"></span></p>
+            <p>Abilities: <br> <span id="abilities1"></span></p>
           </div>
         </div>
 
       </div>
     </div>
-    <div class="row">
+    <div class="row hidden" id="train2">
       <div class="column trainer">
         <div class="row">
-          <div class="column inner">.column</div>
-          <div class="column inner" onclick="get("","")">.column</div>
-          <div class="column inner" onclick="get("","")">.column</div>
-          <div class="column inner" onclick="get("","")">.column</div>
+          <div class="column inner trainerImg">trainer2</div>
+          <div class="column inner ball" onclick="get("","")"></div>
+          <div class="column inner ball" onclick="get("","")"></div>
+          <div class="column inner ball" onclick="get("","")"></div>
         </div>
       </div>
       <div class="column info">
         <div class="row">
-          <div class="column inner">
-            <img src="" alt="" id="pokeimg2">
+          <div class="column inner stats">
+            <img src="" alt="" id="pokeimg2" >
           </div>
-          <div class="column inner"id="pokestats2" >
+          <div class="column inner stats"id="pokestats2" class="pokepic" >
             <p id="name2">NAME</p>
-            <p>HP:<span id="hp2"></span></p>
+            <p>HP:<span id="hp2">2</span></p>
             <p>ATK:<span id="atk2"></span></p>
             <p>DEF:<span id="def2"></span></p>
+            <p>Abilities: <br> <span id="abilities2"></span></p>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row hidden" id="train3">
       <div class="column trainer">
         <div class="row">
-          <div class="column inner">.column</div>
-          <div class="column inner" onclick="get("","")">.column</div>
-          <div class="column inner" onclick="get("","")">.column</div>
-          <div class="column inner" onclick="get("","")">.column</div>
+          <div class="column inner trainerImg">trainer3</div>
+          <div class="column inner ball" onclick="get("","")"></div>
+          <div class="column inner ball" onclick="get("","")"></div>
+          <div class="column inner ball" onclick="get("","")"></div>
         </div>
 
       </div>
       <div class="column info">
         <div class="row">
-          <div class="column inner">.column
-            <img src="" alt="" id="pokeimg2">
+          <div class="column inner stats">.column
+            <img src="" alt="" id="pokeimg2" class="pokepic">
           </div>
-          <div class="column inner" id="pokestats">
+          <div class="column inner stats" id="pokestats">
             <p id="name3">NAME</p>
-            <p>HP:<span id="hp3"></span></p>
+            <p>HP:<span id="hp3">3</span></p>
             <p>ATK:<span id="atk3"></span></p>
             <p>DEF:<span id="def3"></span></p>
+            <p>Abilities: <br> <span id="abilities3"></span></p>
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="column moreInfo"></div>
     </div>
   </div>
   <script type="text/javascript" src="library.js">
