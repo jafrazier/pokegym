@@ -83,6 +83,11 @@ $(".num1").click(function(){
     $("#train2").hide();
     $("#train3").hide();
     $(".loadScreen").fadeOut(1000);
+    $("body").css({"background":"url('https://i.imgur.com/R1NZw3z.png')",
+                  "background-repeat":"no-repeat",
+                  "background-position":"center",
+                  "background-size": "cover"
+  });
 });
 $(".num2").click(function(){
     $("#train2").slideToggle(1500);
@@ -90,6 +95,11 @@ $(".num2").click(function(){
     $("#train3").hide();
     $("#train1").hide();
     $(".loadScreen").fadeOut(1000);
+    $("body").css({"background":"url('https://i.imgur.com/R1NZw3z.png')",
+                  "background-repeat":"no-repeat",
+                  "background-position":"center",
+                  "background-size": "cover"
+  });
 
 });
 $(".num3").click(function(){
@@ -98,4 +108,9 @@ $(".num3").click(function(){
     $("#train1").hide();
     $("#train2").hide();
     $(".loadScreen").fadeOut(1000);
+    $("body").css({"background":"url('https://i.imgur.com/R1NZw3z.png')",
+                  "background-repeat":"no-repeat",
+                  "background-position":"center",
+                  "background-size": "cover"
+  });
 });
