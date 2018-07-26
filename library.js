@@ -14,21 +14,20 @@ trainers = {
     }
   },
   rex:{
-    giratina: {
-      number: '487'
+    gengar: {
+      number: '94',
+      description: 'Sometimes, on a dark night, your shadow thrown by a streetlight will suddenly and startlingly overtake you. It is actually a Gengar running past you, pretending to be your shadow.'
     },
-    kartana: {
-      number: '798'
+    pidgeot: {
+      number: '18',
+      description: 'This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose Pidgeot as their Pokémon'
     },
-    rufflet: {
-      number: '627'
+    jigglypuff: {
+      number: '39',
+      description: 'Jigglypuffs vocal cords can freely adjust the wavelength of its voice. This Pokémon uses this ability to sing at precisely the right wavelength to make its foes most drowsy.'
     },
   },
   hassan:{
-    jolteon: {
-      number: '135',
-      description: "Jolteon's cells generate a low level of electricity. This power is amplified by the static electricity of its fur, enabling the Pokémon to drop thunderbolts. The bristling fur is made of electrically charged needles."
-    },
     flareon: {
       number: '136',
       description: "Flareon's fluffy fur has a functional purpose—it releases heat into the air so that its body does not get excessively hot. This Pokémon's body temperature can rise to a maximum of 1,650 degrees Fahrenheit."
@@ -37,6 +36,10 @@ trainers = {
       number: '134',
       description: "Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water."
     },
+    jolteon: {
+      number: '135',
+      description: 'Jolteons cells generate a low level of electricity. This power is amplified by the static electricity of its fur, enabling the Pokémon to drop thunderbolts. The bristling fur is made of electrically charged needles.'
+    }
   }
 }
 function get(name, pokemon) {
@@ -56,13 +59,6 @@ function get(name, pokemon) {
       document.getElementById('def1').innerHTML = myObj.stats[3].base_stat;
       document.getElementById('abilities1').innerHTML = myObj.abilities[0].ability['name'];
       document.getElementById('description').innerHTML = mypokemon['description'] ;
-    } if (name == 'rex') {
-      document.getElementById('pokeimg3').src = myObj.sprites.front_default;
-      document.getElementById('name3').innerHTML = myObj.name;
-      document.getElementById('hp3').innerHTML = myObj.stats[5].base_stat;
-      document.getElementById('atk3').innerHTML = myObj.stats[4].base_stat;
-      document.getElementById('def3').innerHTML = myObj.stats[3].base_stat;
-      document.getElementById('abilities3').innerHTML = myObj.abilities[0].ability['name'];
     } if (name == 'hassan') {
       document.getElementById('pokeimg2').src = myObj.sprites.front_default;
       document.getElementById('name2').innerHTML = myObj.name;
@@ -70,9 +66,16 @@ function get(name, pokemon) {
       document.getElementById('atk2').innerHTML = myObj.stats[4].base_stat;
       document.getElementById('def2').innerHTML = myObj.stats[3].base_stat;
       document.getElementById('abilities2').innerHTML = myObj.abilities[0].ability['name'];
+      document.getElementById('description').innerHTML = mypokemon['description'] ;
+    } if (name == 'rex') {
+      document.getElementById('pokeimg3').src = myObj.sprites.front_default;
+      document.getElementById('name3').innerHTML = myObj.name;
+      document.getElementById('hp3').innerHTML = myObj.stats[5].base_stat;
+      document.getElementById('atk3').innerHTML = myObj.stats[4].base_stat;
+      document.getElementById('def3').innerHTML = myObj.stats[3].base_stat;
+      document.getElementById('abilities3').innerHTML = myObj.abilities[0].ability['name'];
       document.getElementById('description').innerHTML = mypokemon['description'];
-
-    }
+    } 
     }
   };
   xhttp.open('GET', 'https://pokeapi.co/api/v2/pokemon/'+ pokeNum +'/', true);
@@ -88,6 +91,12 @@ $(".num1").click(function(){
     $("#train2").hide();
     $("#train3").hide();
     $(".loadScreen").fadeOut(1000);
+    $("#description").text("");
+    $("body").css({"background":"url('https://i.imgur.com/R1NZw3z.png')",
+                  "background-repeat":"no-repeat",
+                  "background-position":"center",
+                  "background-size": "cover"
+  });
 });
 
 $(".num2").click(function(){
@@ -100,7 +109,6 @@ $(".num2").click(function(){
                   "background-repeat":"no-repeat",
                   "background-position":"center",
                   "background-size": "cover" });
-
 });
 $(".num3").click(function(){
     $("#train3").slideToggle(1500);
@@ -108,6 +116,12 @@ $(".num3").click(function(){
     $("#train1").hide();
     $("#train2").hide();
     $(".loadScreen").fadeOut(1000);
+    $("#description").text("");
+    $("body").css({"background":"url('https://memestatic.fjcdn.com/large/pictures/4a/34/4a340f_6387710.jpg')",
+                  "background-repeat":"no-repeat",
+                  "background-position":"center",
+                  "background-size": "cover"
+                });
 });
 
 
