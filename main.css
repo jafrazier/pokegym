@@ -2,13 +2,15 @@
 .container{
   margin-top: 5%;
 }
+
 .trainer {
   width: 40%;
-  height: 20vh;
+  height: 40vh;
   border: 6px black solid;
   margin-right: 10%;
   margin-bottom: 1%;
   border-radius: 0px 0px 30px 0px;
+  box-shadow: 5px 5px 5px black;
   opacity: .9;
 
 }
@@ -19,17 +21,33 @@
 
 .badge {
   width: 1%;
-  height: 20vh;
+  height: 40vh;
   border: 6px black solid;
   border-radius: 0px 0px 0px 30px;
+  box-shadow: 5px 5px 5px black;
   opacity: 0.9;
 }
+
 .gym {
   width: 50%;
   height: 10vh;
   border: 1px white solid;
   margin-bottom: 4%;
+  box-shadow: 5px 5px 5px black;
+  text-align: right;
 }
+
+.gym {
+  width: 100%;
+  height: 10vh;
+  border: 1px black solid;
+  margin-bottom: 4%;
+  border-radius: 1.5em 1.5em 0 0;
+  background: rgba(0,0,0,.85);
+  box-shadow: 5px 5px 5px black;
+  text-align: right;
+}
+
 .inner {
   width: 100%;
   height: 18vh;
@@ -50,4 +68,80 @@
     box-shadow: 8px 8px 23px 8px rgba(0,0,0,0.42);
     border: 2px solid #black;
     display: inline-block;
+}
+
+.pokepic {
+  width: 10em;
+  height: 10em;
+  margin-top: 3em;
+}
+
+/*
+.inner {
+  width: 100%;
+  height: 40vh;
+  border: 1px black solid;
+  margin: 10px;
+  margin-top: -0.7em;
+
+} */
+
+p {
+  margin: 0;
+  margin-bottom: .5em;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.gotta:hover {
+  opacity: 1;
+  transform: rotateZ(10deg);
+}
+
+.gotta:active {
+  box-shadow: none;
+  width: 19vw;
+  height: 14vh;
+}
+
+
+.trainerImg {
+  height: auto;
+  background: rgba(0,0,0,.7);
+  box-shadow: 5px 5px 5px black;
+}
+
+.stats {
+  margin: 0;
+  padding: 0;
+  height: 30vh;
+  position: relative;
+  /* margin-top: 3em; */
+  border: none;
+
+}
+
+
+.one {
+  background: url('http://network9.biz/wp-content/uploads/2014/11/Choosing-Stock-Photos-cheesy-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.two {
+  background: url('http://www.babels.com/images/professional-painter-bigstock-175255048-400x400.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.three {
+  background: url('https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e_400x400.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }

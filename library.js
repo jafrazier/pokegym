@@ -1,395 +1,101 @@
-class Trainer {
-  constructor() {
-    this.pokemon = [];
+trainers = {
+  john:{
+    volcanion: {
+      number: '721',
+      description: 'Volcanion is a primarily maroon, quadruped Pokémon with blue and yellow markings. It has large, pointed ears with blue insides and bright blue eyes. Additionally, it has bushy yellow eyebrows and a yellow mandible. There are spike-protrusions on each cheek that extend downward over its lower jaw. Volcanion\'s body has two oval segments separated by a thinner, blue portion. The front portion the body is larger and has two large, arm-like cannons on the back. These cannons are usually held together, forming a ring.'
+    },
+    drapion: {
+      number: '452',
+      description: 'Drapion is a large, purple, scorpion-like Pokémon. Its eyes are a pointed shape, with blue-colored upper portions. Drapion has two small, pointed protrusions between its eyes, and one on the back on its head. Drapion also has protrusions on its jaws, two on the upper and three on the lower, with large, fang-like, white-colored features extending from its mouth'
+
+    },
+    doublade: {
+      number: '680',
+      description: 'When Honedge evolves, it divides into two swords, which cooperate via telepathy to coordinate attacks and slash their enemies to ribbons'
+    }
+  },
+
+  rex:{
+    gengar: {
+      number: '94',
+      description: 'Sometimes, on a dark night, your shadow thrown by a streetlight will suddenly and startlingly overtake you. It is actually a Gengar running past you, pretending to be your shadow.'
+    },
+    pidgeot: {
+      number: '18',
+      description: 'This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose Pidgeot as their Pokémon'
+    },
+    jigglypuff: {
+      number: '39',
+      description: 'Jigglypuffs vocal cords can freely adjust the wavelength of its voice. This Pokémon uses this ability to sing at precisely the right wavelength to make its foes most drowsy.'
+    }
+  },
+
+  hassan:{
+    vaporeon: {
+      number: '134',
+      description: 'Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water.'
+    },
+    flareon: {
+      number: '136',
+      description: 'Flareons fluffy fur has a functional purpose—it releases heat into the air so that its body does not get excessively hot. This Pokémon body temperature can rise to a maximum of 1,650 degrees Fahrenheit.'
+    },
+    jolteon: {
+      number: '135',
+      description: 'Jolteons cells generate a low level of electricity. This power is amplified by the static electricity of its fur, enabling the Pokémon to drop thunderbolts. The bristling fur is made of electrically charged needles.'
+    }
   }
-  add(pokemon) {
-    this.pokemon.push(pokemon);
-    console.log(`you added ${pokemon.name}`)
-  }
-  all() {
-    console.log(this.pokemon);
-  }
 }
-
-
-class Pokemon {
-  constructor(name, hp, attack, defense, ability) {
-  this.name = name;
-  this.hp = hp;
-  this.attack = attack;
-  this.defense = defense;
-  this.ability = ability;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let rex = new Trainer();
-
-// whats the variable, it has the identity as 'clickp' in the document its an id
-var urlClick = ["https://pokeapi.co/api/v2/pokemon/94/", "https://pokeapi.co/api/v2/pokemon/18/", "https://pokeapi.co/api/v2/pokemon/39/"];
-
-function getGengar() {
-  //the function is load the document//
-  var xhttp = new XMLHttpRequest();
-  // in this world i found a xhttp and it's name was XMLHttpRequest
-  xhttp.onreadystatechange = function() {
-    // in this universe a xhttp is going to function called .onreadystatechange and it goes like this...
-
-    if (this.readyState === 4 && this.status === 200) {
-      // but only IF, the readyState is exactly 4 AND status is exactly 200
-      // document.getElementById("info").innerHTML = this.responseText;
-
-      var data = JSON.parse(this.responseText);
-
-        gengar = new Pokemon (
-        this.name = data.name,
-        this.hp = data.stats[5].base_stat,
-        this.attack = data.stats[4].base_stat,
-        this.defense = data.stats[3].base_stat,
-        this.ability =  data.abilities[0].ability.name,
-      )
-
-      document.getElementById('name').innerHTML = data.name;
-      document.getElementById('hp').innerHTML = "HP " + data.stats[5].base_stat;
-      document.getElementById('atk').innerHTML = "ATK " + data.stats[4].base_stat;
-      document.getElementById('def').innerHTML = "DEF " + data.stats[3].base_stat;
-      document.getElementById('abl').innerHTML = "Ability " + data.abilities[0].ability.name;
-      document.getElementById('pic').src = data.sprites.front_shiny;
-      // in his document there is element, aka id, named info. oh its in the real html.
-      // id says this:
-      console.log(urlArrey);
-  };
-
-  var randomId =  Math.floor((Math.random()*urlClick.length));
-  var urlArrey = urlClick[randomId];
-}
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/94/", true);
-  // open [call to action] and use the GET method something from this "url" to this server...
-  xhttp.send();
-  // console.log(urlArrey);
-  // ... then send it to my server
-}
-
-function getPidgeot() {
-  //the function is load the document//
-  var xhttp = new XMLHttpRequest();
-  // in this world i found a xhttp and it's name was XMLHttpRequest
-  xhttp.onreadystatechange = function() {
-    // in this universe a xhttp is going to function called .onreadystatechange and it goes like this...
-
-    if (this.readyState === 4 && this.status === 200) {
-      // but only IF, the readyState is exactly 4 AND status is exactly 200
-      // document.getElementById("info").innerHTML = this.responseText;
-
-      var data = JSON.parse(this.responseText);
-
-       pidgeot = new Pokemon (
-        this.name = data.name,
-        this.hp = data.stats[5].base_stat,
-        this.attack = data.stats[4].base_stat,
-        this.defense = data.stats[3].base_stat,
-        this.ability =  data.abilities[0].ability.name,
-      )
-
-      document.getElementById('name').innerHTML = data.name;
-      document.getElementById('hp').innerHTML = "HP " + data.stats[5].base_stat;
-      document.getElementById('atk').innerHTML = "ATK " + data.stats[4].base_stat;
-      document.getElementById('def').innerHTML = "DEF " + data.stats[3].base_stat;
-      document.getElementById('abl').innerHTML = "Ability " + data.abilities[0].ability.name;
-      document.getElementById('pic').src = data.sprites.front_shiny;
-      // in his document there is element, aka id, named info. oh its in the real html.
-      // id says this:
-      console.log(urlArrey);
-  };
-
-  var randomId =  Math.floor((Math.random()*urlClick.length));
-  var urlArrey = urlClick[randomId];
-}
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/18/", true);
-  // open [call to action] and use the GET method something from this "url" to this server...
-  xhttp.send();
-  // console.log(urlArrey);
-  // ... then send it to my server
-}
-
-function getJigglypuff() {
+function get(name, pokemon) {
+  var myName = trainers[name];
+  var mypokemon = myName[pokemon];
+  var pokeNum = mypokemon['number'];
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (this.readyState === 4 && this.status === 200) {
-      var data = JSON.parse(this.responseText);
-      jigglypuff = new Pokemon (
-        this.name = data.name,
-        this.hp = data.stats[5].base_stat,
-        this.attack = data.stats[4].base_stat,
-        this.defense = data.stats[3].base_stat,
-        this.ability =  data.abilities[0].ability.name,
-      )
-
-      document.getElementById('name').innerHTML = data.name;
-      document.getElementById('hp').innerHTML = "HP " + data.stats[5].base_stat;
-      document.getElementById('atk').innerHTML = "ATK " + data.stats[4].base_stat;
-      document.getElementById('def').innerHTML = "DEF " + data.stats[3].base_stat;
-      document.getElementById('abl').innerHTML = "Ability " + data.abilities[0].ability.name;
-      document.getElementById('pic').src = data.sprites.front_shiny;
-
-      console.log(urlArrey);
+    if (this.readyState == 4 && this.status == 200) {
+      var myObj = JSON.parse(this.responseText);
+      console.log(myObj.name);
+    if (name == 'john') {
+      document.getElementById('pokeimg1').src = myObj.sprites.front_default;
+      document.getElementById('name1').innerHTML = myObj.name;
+      document.getElementById('hp1').innerHTML = myObj.stats[5].base_stat;
+      document.getElementById('atk1').innerHTML = myObj.stats[4].base_stat;
+      document.getElementById('def1').innerHTML = myObj.stats[3].base_stat;
+      document.getElementById('abilities1').innerHTML = myObj.abilities[0].ability['name'];
+      document.getElementById('description').innerHTML = mypokemon['description'] ;
+    } if (name == 'rex') {
+      document.getElementById('pokeimg2').src = myObj.sprites.front_default;
+      document.getElementById('name2').innerHTML = myObj.name;
+      document.getElementById('hp2').innerHTML = myObj.stats[5].base_stat;
+      document.getElementById('atk2').innerHTML = myObj.stats[4].base_stat;
+      document.getElementById('def2').innerHTML = myObj.stats[3].base_stat;
+      document.getElementById('abilities2').innerHTML = myObj.abilities[0].ability['name'];
+    } if (name == 'hassan') {
+      document.getElementById('pokeimg3').src = myObj.sprites.front_default;
+      document.getElementById('name3').innerHTML = myObj.name;
+      document.getElementById('hp3').innerHTML = myObj.stats[5].base_stat;
+      document.getElementById('atk3').innerHTML = myObj.stats[4].base_stat;
+      document.getElementById('def3').innerHTML = myObj.stats[3].base_stat;
+      document.getElementById('abilities3').innerHTML = myObj.abilities[0].ability['name'];
+    }
+    }
   };
-
-  var randomId =  Math.floor((Math.random()*urlClick.length));
-  var urlArrey = urlClick[randomId];
-}
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/39/", true);
+  xhttp.open('GET', 'https://pokeapi.co/api/v2/pokemon/'+ pokeNum +'/', true);
   xhttp.send();
 }
-
-let hassan = new Trainer();
-// whats the variable, it has the identity as 'clickp' in the document its an id
-var urlClick = ["https://pokeapi.co/api/v2/pokemon/134/", "https://pokeapi.co/api/v2/pokemon/136/", "https://pokeapi.co/api/v2/pokemon/135/"];
-
-function getVaporeon() {
-  //the function is load the document//
-  var xhttp = new XMLHttpRequest();
-  // in this world i found a xhttp and it's name was XMLHttpRequest
-  xhttp.onreadystatechange = function() {
-    // in this universe a xhttp is going to function called .onreadystatechange and it goes like this...
-
-    if (this.readyState === 4 && this.status === 200) {
-      // but only IF, the readyState is exactly 4 AND status is exactly 200
-      // document.getElementById("info").innerHTML = this.responseText;
-
-      var data = JSON.parse(this.responseText);
-
-        vaporeon = new Pokemon (
-        this.name = data.name,
-        this.hp = data.stats[5].base_stat,
-        this.attack = data.stats[4].base_stat,
-        this.defense = data.stats[3].base_stat,
-        this.ability =  data.abilities[0].ability.name,
-      )
-
-      document.getElementById('name').innerHTML = data.name;
-      document.getElementById('hp').innerHTML = "HP " + data.stats[5].base_stat;
-      document.getElementById('atk').innerHTML = "ATK " + data.stats[4].base_stat;
-      document.getElementById('def').innerHTML = "DEF " + data.stats[3].base_stat;
-      document.getElementById('abl').innerHTML = "Ability " + data.abilities[0].ability.name;
-      document.getElementById('pic').src = data.sprites.front_shiny;
-      // in his document there is element, aka id, named info. oh its in the real html.
-      // id says this:
-      console.log(urlArrey);
-  };
-
-  var randomId =  Math.floor((Math.random()*urlClick.length));
-  var urlArrey = urlClick[randomId];
+function getTrainer1(){
+  document.getElementById('train1').classList.remove('hidden');
+  document.getElementById('train2').classList.add('hidden');
+  document.getElementById('train3').classList.add('hidden');
 }
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/134/", true);
-  // open [call to action] and use the GET method something from this "url" to this server...
-  xhttp.send();
-  // console.log(urlArrey);
-  // ... then send it to my server
+function getTrainer2(){
+  document.getElementById('train2').classList.remove('hidden');
+  document.getElementById('train1').classList.add('hidden');
+  document.getElementById('train3').classList.add('hidden');
+
 }
+function getTrainer3(){
+  document.getElementById('train3').classList.remove('hidden');
+  document.getElementById('train1').classList.add('hidden');
+  document.getElementById('train2').classList.add('hidden');
 
-function getFlareon() {
-  //the function is load the document//
-  var xhttp = new XMLHttpRequest();
-  // in this world i found a xhttp and it's name was XMLHttpRequest
-  xhttp.onreadystatechange = function() {
-    // in this universe a xhttp is going to function called .onreadystatechange and it goes like this...
-
-    if (this.readyState === 4 && this.status === 200) {
-      // but only IF, the readyState is exactly 4 AND status is exactly 200
-      // document.getElementById("info").innerHTML = this.responseText;
-
-      var data = JSON.parse(this.responseText);
-
-       flareon = new Pokemon (
-        this.name = data.name,
-        this.hp = data.stats[5].base_stat,
-        this.attack = data.stats[4].base_stat,
-        this.defense = data.stats[3].base_stat,
-        this.ability =  data.abilities[0].ability.name,
-      )
-
-      document.getElementById('name').innerHTML = data.name;
-      document.getElementById('hp').innerHTML = "HP " + data.stats[5].base_stat;
-      document.getElementById('atk').innerHTML = "ATK " + data.stats[4].base_stat;
-      document.getElementById('def').innerHTML = "DEF " + data.stats[3].base_stat;
-      document.getElementById('abl').innerHTML = "Ability " + data.abilities[0].ability.name;
-      document.getElementById('pic').src = data.sprites.front_shiny;
-      // in his document there is element, aka id, named info. oh its in the real html.
-      // id says this:
-      console.log(urlArrey);
-  };
-
-  var randomId =  Math.floor((Math.random()*urlClick.length));
-  var urlArrey = urlClick[randomId];
-}
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/136/", true);
-  // open [call to action] and use the GET method something from this "url" to this server...
-  xhttp.send();
-  // console.log(urlArrey);
-  // ... then send it to my server
-}
-
-function getJolteon() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState === 4 && this.status === 200) {
-      var data = JSON.parse(this.responseText);
-      jolteon = new Pokemon (
-        this.name = data.name,
-        this.hp = data.stats[5].base_stat,
-        this.attack = data.stats[4].base_stat,
-        this.defense = data.stats[3].base_stat,
-        this.ability =  data.abilities[0].ability.name,
-      )
-
-      document.getElementById('name').innerHTML = data.name;
-      document.getElementById('hp').innerHTML = "HP " + data.stats[5].base_stat;
-      document.getElementById('atk').innerHTML = "ATK " + data.stats[4].base_stat;
-      document.getElementById('def').innerHTML = "DEF " + data.stats[3].base_stat;
-      document.getElementById('abl').innerHTML = "Ability " + data.abilities[0].ability.name;
-      document.getElementById('pic').src = data.sprites.front_shiny;
-
-      console.log(urlArrey);
-  };
-
-  var randomId =  Math.floor((Math.random()*urlClick.length));
-  var urlArrey = urlClick[randomId];
-}
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/135/", true);
-  xhttp.send();
-}
-
-let john = new Trainer();
-// whats the variable, it has the identity as 'clickp' in the document its an id
-var urlClick = ["https://pokeapi.co/api/v2/pokemon/721/", "https://pokeapi.co/api/v2/pokemon/452/", "https://pokeapi.co/api/v2/pokemon/680/"];
-
-function getVolcanion() {
-  //the function is load the document//
-  var xhttp = new XMLHttpRequest();
-  // in this world i found a xhttp and it's name was XMLHttpRequest
-  xhttp.onreadystatechange = function() {
-    // in this universe a xhttp is going to function called .onreadystatechange and it goes like this...
-
-    if (this.readyState === 4 && this.status === 200) {
-      // but only IF, the readyState is exactly 4 AND status is exactly 200
-      // document.getElementById("info").innerHTML = this.responseText;
-
-      var data = JSON.parse(this.responseText);
-
-        volcanion = new Pokemon (
-        this.name = data.name,
-        this.hp = data.stats[5].base_stat,
-        this.attack = data.stats[4].base_stat,
-        this.defense = data.stats[3].base_stat,
-        this.ability =  data.abilities[0].ability.name,
-      )
-
-      document.getElementById('name').innerHTML = data.name;
-      document.getElementById('hp').innerHTML = "HP " + data.stats[5].base_stat;
-      document.getElementById('atk').innerHTML = "ATK " + data.stats[4].base_stat;
-      document.getElementById('def').innerHTML = "DEF " + data.stats[3].base_stat;
-      document.getElementById('abl').innerHTML = "Ability " + data.abilities[0].ability.name;
-      document.getElementById('pic').src = data.sprites.front_shiny;
-      // in his document there is element, aka id, named info. oh its in the real html.
-      // id says this:
-      console.log(urlArrey);
-  };
-
-  var randomId =  Math.floor((Math.random()*urlClick.length));
-  var urlArrey = urlClick[randomId];
-}
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/721/", true);
-  // open [call to action] and use the GET method something from this "url" to this server...
-  xhttp.send();
-  // console.log(urlArrey);
-  // ... then send it to my server
-}
-
-function getDrapion() {
-  //the function is load the document//
-  var xhttp = new XMLHttpRequest();
-  // in this world i found a xhttp and it's name was XMLHttpRequest
-  xhttp.onreadystatechange = function() {
-    // in this universe a xhttp is going to function called .onreadystatechange and it goes like this...
-
-    if (this.readyState === 4 && this.status === 200) {
-      // but only IF, the readyState is exactly 4 AND status is exactly 200
-      // document.getElementById("info").innerHTML = this.responseText;
-
-      var data = JSON.parse(this.responseText);
-
-       drapion = new Pokemon (
-        this.name = data.name,
-        this.hp = data.stats[5].base_stat,
-        this.attack = data.stats[4].base_stat,
-        this.defense = data.stats[3].base_stat,
-        this.ability =  data.abilities[0].ability.name,
-      )
-
-      document.getElementById('name').innerHTML = data.name;
-      document.getElementById('hp').innerHTML = "HP " + data.stats[5].base_stat;
-      document.getElementById('atk').innerHTML = "ATK " + data.stats[4].base_stat;
-      document.getElementById('def').innerHTML = "DEF " + data.stats[3].base_stat;
-      document.getElementById('abl').innerHTML = "Ability " + data.abilities[0].ability.name;
-      document.getElementById('pic').src = data.sprites.front_shiny;
-      // in his document there is element, aka id, named info. oh its in the real html.
-      // id says this:
-      console.log(urlArrey);
-  };
-
-  var randomId =  Math.floor((Math.random()*urlClick.length));
-  var urlArrey = urlClick[randomId];
-}
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/452/", true);
-  // open [call to action] and use the GET method something from this "url" to this server...
-  xhttp.send();
-  // console.log(urlArrey);
-  // ... then send it to my server
-}
-
-function getDoublade() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState === 4 && this.status === 200) {
-      var data = JSON.parse(this.responseText);
-      doublade = new Pokemon (
-        this.name = data.name,
-        this.hp = data.stats[5].base_stat,
-        this.attack = data.stats[4].base_stat,
-        this.defense = data.stats[3].base_stat,
-        this.ability =  data.abilities[0].ability.name,
-      )
-
-      document.getElementById('name').innerHTML = data.name;
-      document.getElementById('hp').innerHTML = "HP " + data.stats[5].base_stat;
-      document.getElementById('atk').innerHTML = "ATK " + data.stats[4].base_stat;
-      document.getElementById('def').innerHTML = "DEF " + data.stats[3].base_stat;
-      document.getElementById('abl').innerHTML = "Ability " + data.abilities[0].ability.name;
-      document.getElementById('pic').src = data.sprites.front_shiny;
-
-      console.log(urlArrey);
-  };
-
-  var randomId =  Math.floor((Math.random()*urlClick.length));
-  var urlArrey = urlClick[randomId];
-}
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/680/", true);
-  xhttp.send();
 }

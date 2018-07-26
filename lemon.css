@@ -33,7 +33,7 @@ body {
   text-align: center;
   background: url("stadium.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100vh;
 }
 
 b, strong {
@@ -124,8 +124,8 @@ h6 {
 }
 
 .btn, .btn:link, .btn:visited, button, input[type=button], input[type=reset], input[type=submit] {
-  background-color: #dbbb2b;
-  border: .1rem solid #dbbb2b;
+  background-color: #485460;
+  border: .1rem solid #485460;
   border-radius: .4rem;
   color: #fff;
   -webkit-appearance: none;
@@ -146,8 +146,8 @@ h6 {
 }
 
 .btn:focus, .btn:hover, .btn:link:focus, .btn:link:hover, .btn:visited:focus, .btn:visited:hover, button:focus, button:hover, input[type=button]:focus, input[type=button]:hover, input[type=reset]:focus, input[type=reset]:hover, input[type=submit]:focus, input[type=submit]:hover {
-  background-color: #b4991f;
-  border: .1rem solid #b4991f;
+  background-color: #808e9b;
+  border: .1rem solid #808e9b;
   outline: 0;
   color: #fff
 }
@@ -158,17 +158,17 @@ h6 {
 }
 
 .btn:disabled:focus, .btn:disabled:hover, .btn:link:disabled:focus, .btn:link:disabled:hover, .btn:visited:disabled:focus, .btn:visited:disabled:hover, button:disabled:focus, button:disabled:hover, input[type=button]:disabled:focus, input[type=button]:disabled:hover, input[type=reset]:disabled:focus, input[type=reset]:disabled:hover, input[type=submit]:disabled:focus, input[type=submit]:disabled:hover {
-  background-color: #dbbb2b;
-  border-color: #dbbb2b
+  background-color: #485460;
+  border-color: #485460
 }
 
 .btn.outline, .btn:link.outline, .btn:visited.outline, button.outline, input[type=button].outline, input[type=reset].outline, input[type=submit].outline {
   background-color: transparent;
-  color: #dbbb2b
+  color: #485460
 }
 
 .btn.outline:focus, .btn.outline:hover, .btn:link.outline:focus, .btn:link.outline:hover, .btn:visited.outline:focus, .btn:visited.outline:hover, button.outline:focus, button.outline:hover, input[type=button].outline:focus, input[type=button].outline:hover, input[type=reset].outline:focus, input[type=reset].outline:hover, input[type=submit].outline:focus, input[type=submit].outline:hover {
-  color: #b4991f
+  color: #808e9b
 }
 
 .btn.outline:disabled:focus, .btn.outline:disabled:hover, .btn:link.outline:disabled:focus, .btn:link.outline:disabled:hover, .btn:visited.outline:disabled:focus, .btn:visited.outline:disabled:hover, button.outline:disabled:focus, button.outline:disabled:hover, input[type=button].outline:disabled:focus, input[type=button].outline:disabled:hover, input[type=reset].outline:disabled:focus, input[type=reset].outline:disabled:hover, input[type=submit].outline:disabled:focus, html {
@@ -255,7 +255,8 @@ h6 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row
+  flex-direction: row;
+  margin-top: 8%
 }
 
 @media (max-width:56.25em) {
@@ -290,8 +291,8 @@ h6 {
 }
 
 .btn, .btn:link, .btn:visited, button, input[type=button], input[type=reset], input[type=submit] {
-  background-color: #dbbb2b;
-  border: .1rem solid #dbbb2b;
+  background-color: #485460;
+  border: .1rem solid #485460;
   border-radius: .4rem;
   color: #fff;
   -webkit-appearance: none;
@@ -312,8 +313,8 @@ h6 {
 }
 
 .btn:focus, .btn:hover, .btn:link:focus, .btn:link:hover, .btn:visited:focus, .btn:visited:hover, button:focus, button:hover, input[type=button]:focus, input[type=button]:hover, input[type=reset]:focus, input[type=reset]:hover, input[type=submit]:focus, input[type=submit]:hover {
-  background-color: #b4991f;
-  border: .1rem solid #b4991f;
+  background-color: #808e9b;
+  border: .1rem solid #808e9b;
   outline: 0;
   color: #fff
 }
@@ -324,23 +325,23 @@ h6 {
 }
 
 .btn:disabled:focus, .btn:disabled:hover, .btn:link:disabled:focus, .btn:link:disabled:hover, .btn:visited:disabled:focus, .btn:visited:disabled:hover, button:disabled:focus, button:disabled:hover, input[type=button]:disabled:focus, input[type=button]:disabled:hover, input[type=reset]:disabled:focus, input[type=reset]:disabled:hover, input[type=submit]:disabled:focus, input[type=submit]:disabled:hover {
-  background-color: #dbbb2b;
-  border-color: #dbbb2b
+  background-color: #485460;
+  border-color: #485460
 }
 
 .btn.outline, .btn:link.outline, .btn:visited.outline, button.outline, input[type=button].outline, input[type=reset].outline, input[type=submit].outline {
   background-color: transparent;
-  color: #dbbb2b
+  color: #485460
 }
 
 .btn.outline:focus, .btn.outline:hover, .btn:link.outline:focus, .btn:link.outline:hover, .btn:visited.outline:focus, .btn:visited.outline:hover, button.outline:focus, button.outline:hover, input[type=button].outline:focus, input[type=button].outline:hover, input[type=reset].outline:focus, input[type=reset].outline:hover, input[type=submit].outline:focus, input[type=submit].outline:hover {
-  color: #b4991f
+  color: #808e9b
 }
 
 .btn.outline:disabled:focus, .btn.outline:disabled:hover, .btn:link.outline:disabled:focus, .btn:link.outline:disabled:hover, .btn:visited.outline:disabled:focus, .btn:visited.outline:disabled:hover, button.outline:disabled:focus, button.outline:disabled:hover, input[type=button].outline:disabled:focus, input[type=button].outline:disabled:hover, input[type=reset].outline:disabled:focus, input[type=reset].outline:disabled:hover, input[type=submit].outline:disabled:focus, input[type=submit].outline:disabled:hover {
   background-color: inherit;
   border-color: inherit;
-  color: #dbbb2b
+  color: #485460
 }
 
 .btn.btn-full, .btn:link.btn-full, .btn:visited.btn-full, button.btn-full, input[type=button].btn-full, input[type=reset].btn-full, input[type=submit].btn-full {
@@ -362,7 +363,7 @@ code, pre {
 pre {
   overflow-y: scroll;
   padding: 1rem;
-  border-bottom: .4rem solid #dbbb2b;
+  border-bottom: .4rem solid #485460;
   margin-bottom: 2rem
 }
 
@@ -372,7 +373,7 @@ pre>code {
 }
 
 blockquote {
-  border-left: .4rem solid #dbbb2b;
+  border-left: .4rem solid #485460;
   padding: 1rem 2rem;
   background-color: #f6f6f6;
   margin-bottom: 2rem
@@ -390,16 +391,16 @@ blockquote cite {
 hr {
   margin: 3rem 0;
   border: 0;
-  border-top: .1rem solid #dbbb2b
+  border-top: .1rem solid #485460
 }
 
 a, a:link, a:visited {
-  color: #dbbb2b;
+  color: #485460;
   text-decoration: none
 }
 
 a:active, a:focus, a:hover, a:link:active, a:link:focus, a:link:hover, a:visited:active, a:visited:focus, a:visited:hover {
-  color: #b4991f;
+  color: #808e9b;
   outline: 0
 }
 
@@ -423,7 +424,7 @@ input:not([type]), input[type=color], input[type=date], input[type=datetime-loca
 }
 
 input:not([type]):focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
-  border-color: #dbbb2b;
+  border-color: #485460;
   outline: 0
 }
 
@@ -491,12 +492,12 @@ table {
 
 td, th {
   text-align: left;
-  border-bottom: .1rem solid #dbbb2b;
+  border-bottom: .1rem solid #485460;
   padding: 1rem
 }
 
 thead th {
-  border-bottom: 2px solid #dbbb2b
+  border-bottom: 2px solid #485460
 }
 
 .clearfix:after {
@@ -540,7 +541,7 @@ thead th {
 input[type=submit].outline:disabled:hover {
   background-color: inherit;
   border-color: inherit;
-  color: #dbbb2b
+  color: #485460
 }
 
 .btn.btn-full, .btn:link.btn-full, .btn:visited.btn-full, button.btn-full, input[type=button].btn-full, input[type=reset].btn-full, input[type=submit].btn-full {
@@ -562,7 +563,7 @@ code, pre {
 pre {
   overflow-y: scroll;
   padding: 1rem;
-  border-bottom: .4rem solid #dbbb2b;
+  border-bottom: .4rem solid #485460;
   margin-bottom: 2rem
 }
 
@@ -572,7 +573,7 @@ pre>code {
 }
 
 blockquote {
-  border-left: .4rem solid #dbbb2b;
+  border-left: .4rem solid #485460;
   padding: 1rem 2rem;
   background-color: #f6f6f6;
   margin-bottom: 2rem
@@ -590,16 +591,16 @@ blockquote cite {
 hr {
   margin: 3rem 0;
   border: 0;
-  border-top: .1rem solid #dbbb2b
+  border-top: .1rem solid #485460
 }
 
 a, a:link, a:visited {
-  color: #dbbb2b;
+  color: #485460;
   text-decoration: none
 }
 
 a:active, a:focus, a:hover, a:link:active, a:link:focus, a:link:hover, a:visited:active, a:visited:focus, a:visited:hover {
-  color: #b4991f;
+  color: #808e9b;
   outline: 0
 }
 
@@ -623,7 +624,7 @@ input:not([type]), input[type=color], input[type=date], input[type=datetime-loca
 }
 
 input:not([type]):focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
-  border-color: #dbbb2b;
+  border-color: #485460;
   outline: 0
 }
 
@@ -691,12 +692,12 @@ table {
 
 td, th {
   text-align: left;
-  border-bottom: .1rem solid #dbbb2b;
+  border-bottom: .1rem solid #485460;
   padding: 1rem
 }
 
 thead th {
-  border-bottom: 2px solid #dbbb2b
+  border-bottom: 2px solid #485460
 }
 
 .clearfix:after {
