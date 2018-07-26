@@ -9,7 +9,7 @@
   <title>pokegym</title>
 </head>
 
-<body>
+<body id="back">
   <div class="container">
     <div class="row">
       <div class="column gym">
@@ -49,10 +49,10 @@
       <div class="column trainer">
         <h2>Hassan</h2>
         <div class="row">
-          <div class="column inner trainerImg two">trainer3</div>
-          <div class="column inner ball" onclick="get('hassan','vaporeon')"></div>
-          <div class="column inner ball" onclick="get('hassan','flareon')"></div>
+          <div class="column inner trainerImg two"></div>
           <div class="column inner ball" onclick="get('hassan','jolteon')"></div>
+          <div class="column inner ball" onclick="get('hassan','flareon')"></div>
+          <div class="column inner ball" onclick="get('hassan','vaporeon')"></div>
         </div>
       </div>
       <div class="column info">
@@ -95,10 +95,11 @@
         </div>
       </div>
     </div>
-    <div class="row lowerText">
+    <div class="row lowerText ">
       <div class="column moreInfo">
         <h3>Description</h3>
         <p id="description"></p>
+
       </div>
     </div>
     <div class="container loadScreen">

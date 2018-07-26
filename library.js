@@ -28,13 +28,13 @@ trainers = {
     },
   },
   hassan:{
-    vaporeon: {
-      number: '134',
-      description: 'Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water.'
-    },
     flareon: {
       number: '136',
-      description: 'Flareons fluffy fur has a functional purpose—it releases heat into the air so that its body does not get excessively hot. This Pokémon body temperature can rise to a maximum of 1,650 degrees Fahrenheit.'
+      description: "Flareon's fluffy fur has a functional purpose—it releases heat into the air so that its body does not get excessively hot. This Pokémon's body temperature can rise to a maximum of 1,650 degrees Fahrenheit."
+    },
+    vaporeon: {
+      number: '134',
+      description: "Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water."
     },
     jolteon: {
       number: '135',
@@ -74,8 +74,8 @@ function get(name, pokemon) {
       document.getElementById('atk3').innerHTML = myObj.stats[4].base_stat;
       document.getElementById('def3').innerHTML = myObj.stats[3].base_stat;
       document.getElementById('abilities3').innerHTML = myObj.abilities[0].ability['name'];
-      document.getElementById('description').innerHTML = mypokemon['description'] ;
-    }
+      document.getElementById('description').innerHTML = mypokemon['description'];
+    } 
     }
   };
   xhttp.open('GET', 'https://pokeapi.co/api/v2/pokemon/'+ pokeNum +'/', true);
@@ -98,18 +98,17 @@ $(".num1").click(function(){
                   "background-size": "cover"
   });
 });
+
 $(".num2").click(function(){
     $("#train2").slideToggle(1500);
     $(".lowerText").slideDown(3000);
     $("#train3").hide();
     $("#train1").hide();
     $(".loadScreen").fadeOut(1000);
-    $("#description").text("");
-    $("body").css({"background":"url('https://i.imgur.com/R1NZw3z.png')",
+    $("body").css({"background":"url('http://sfwallpaper.com/images/cool-pokemon-pictures-13.jpg')",
                   "background-repeat":"no-repeat",
                   "background-position":"center",
-                  "background-size": "cover"
-  });
+                  "background-size": "cover" });
 });
 $(".num3").click(function(){
     $("#train3").slideToggle(1500);
@@ -124,3 +123,7 @@ $(".num3").click(function(){
                   "background-size": "cover"
                 });
 });
+
+
+
+
