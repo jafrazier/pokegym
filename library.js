@@ -100,7 +100,6 @@ $(".num2").click(function(){
                   "background-position":"center",
                   "background-size": "cover"
   });
-
 });
 $(".num3").click(function(){
     $("#train3").slideToggle(1500);
