@@ -5,15 +5,24 @@
 .trainer {
   width: 40%;
   height: 20vh;
-  border: 1px black solid;
+  border: 6px black solid;
   margin-right: 10%;
   margin-bottom: 1%;
+  border-radius: 0px 0px 30px 0px;
+  opacity: .9;
+
+}
+
+.names {
+  border: 1px white solid;
 }
 
 .badge {
   width: 1%;
   height: 20vh;
-  border: 1px white solid;
+  border: 6px black solid;
+  border-radius: 0px 0px 0px 30px;
+  opacity: 0.9;
 }
 .gym {
   width: 50%;
@@ -25,7 +34,8 @@
   width: 100%;
   height: 18vh;
   margin: 1%;
-  /* border: 1px black solid; */
+  opacity: 1;
+    border: 1px white solid;
 
 }
 
@@ -39,9 +49,5 @@
     border-radius: 100px;
     box-shadow: 8px 8px 23px 8px rgba(0,0,0,0.42);
     border: 2px solid #black;
-    display: inline-block;}
-}
-
-.jjohn {
-  background-color: #EDC548;
+    display: inline-block;
 }
