@@ -25,14 +25,17 @@ trainers = {
     },
   },
   hassan:{
-    salandit: {
-      number: '757'
+    jolteon: {
+      number: '135',
+      description: "Jolteon's cells generate a low level of electricity. This power is amplified by the static electricity of its fur, enabling the Pokémon to drop thunderbolts. The bristling fur is made of electrically charged needles."
     },
-    heatmor: {
-      number: '631'
+    flareon: {
+      number: '136',
+      description: "Flareon's fluffy fur has a functional purpose—it releases heat into the air so that its body does not get excessively hot. This Pokémon's body temperature can rise to a maximum of 1,650 degrees Fahrenheit."
     },
-    talonflame: {
-      number: '663'
+    vaporeon: {
+      number: '134',
+      description: "Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water."
     },
   }
 }
@@ -54,19 +57,21 @@ function get(name, pokemon) {
       document.getElementById('abilities1').innerHTML = myObj.abilities[0].ability['name'];
       document.getElementById('description').innerHTML = mypokemon['description'] ;
     } if (name == 'rex') {
-      document.getElementById('pokeimg2').src = myObj.sprites.front_default;
-      document.getElementById('name2').innerHTML = myObj.name;
-      document.getElementById('hp2').innerHTML = myObj.stats[5].base_stat;
-      document.getElementById('atk2').innerHTML = myObj.stats[4].base_stat;
-      document.getElementById('def2').innerHTML = myObj.stats[3].base_stat;
-      document.getElementById('abilities2').innerHTML = myObj.abilities[0].ability['name'];
-    } if (name == 'hassan') {
       document.getElementById('pokeimg3').src = myObj.sprites.front_default;
       document.getElementById('name3').innerHTML = myObj.name;
       document.getElementById('hp3').innerHTML = myObj.stats[5].base_stat;
       document.getElementById('atk3').innerHTML = myObj.stats[4].base_stat;
       document.getElementById('def3').innerHTML = myObj.stats[3].base_stat;
       document.getElementById('abilities3').innerHTML = myObj.abilities[0].ability['name'];
+    } if (name == 'hassan') {
+      document.getElementById('pokeimg2').src = myObj.sprites.front_default;
+      document.getElementById('name2').innerHTML = myObj.name;
+      document.getElementById('hp2').innerHTML = myObj.stats[5].base_stat;
+      document.getElementById('atk2').innerHTML = myObj.stats[4].base_stat;
+      document.getElementById('def2').innerHTML = myObj.stats[3].base_stat;
+      document.getElementById('abilities2').innerHTML = myObj.abilities[0].ability['name'];
+      document.getElementById('description').innerHTML = mypokemon['description'];
+
     }
     }
   };
@@ -84,12 +89,17 @@ $(".num1").click(function(){
     $("#train3").hide();
     $(".loadScreen").fadeOut(1000);
 });
+
 $(".num2").click(function(){
     $("#train2").slideToggle(1500);
     $(".lowerText").slideDown(3000);
     $("#train3").hide();
     $("#train1").hide();
     $(".loadScreen").fadeOut(1000);
+    $("body").css({"background":"url('http://sfwallpaper.com/images/cool-pokemon-pictures-13.jpg')",
+                  "background-repeat":"no-repeat",
+                  "background-position":"center",
+                  "background-size": "cover" });
 
 });
 $(".num3").click(function(){
@@ -99,3 +109,7 @@ $(".num3").click(function(){
     $("#train2").hide();
     $(".loadScreen").fadeOut(1000);
 });
+
+
+
+
