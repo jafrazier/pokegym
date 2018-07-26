@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="lemon.css">
   <link rel="stylesheet" href="main.css">
   <title>pokegym</title>
@@ -11,61 +12,106 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="column gym">.column</div>
+      <div class="column gym">
+        <h1>Pokegym</h1>
+        <input type="button" value="John" class="selection num1" onclick="getTrainer1()">
+        <input type="button" value="Hassan" class="selection num2" onclick="getTrainer2()">
+        <input type="button" value="Rex" class="selection num3" onclick="getTrainer3()">
+      </div>
     </div>
-    <div class="row">
+    <div class="row" id="train1">
       <div class="column trainer">
+        <h2>John</h2>
         <div class="row">
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
+          <div class="column inner trainerImg one"></div>
+          <div class="column inner ball" onclick="get('john','volcanion')"></div>
+          <div class="column inner ball" onclick="get('john','drapion')"></div>
+          <div class="column inner ball" onclick="get('john','doublade')"></div>
         </div>
       </div>
-      <div class="column badge">
+      <div class="column info">
         <div class="row">
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
+          <div class="column inner stats">
+            <img src="" alt="" id="pokeimg1" class="pokepic">
+          </div>
+          <div class="column inner stats" id="pokestats1">
+            <p id="name1">NAME</p>
+            <p>HP:<span id="hp1"></span></p>
+            <p>ATK:<span id="atk1"></span></p>
+            <p>DEF:<span id="def1"></span></p>
+            <p>Abilities: <br> <span id="abilities1"></span></p>
+          </div>
         </div>
 
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="train2">
       <div class="column trainer">
+        <h2>Hassan</h2>
         <div class="row">
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
+          <div class="column inner trainerImg two"></div>
+          <div class="column inner ball" onclick="get('rex','giratina')"></div>
+          <div class="column inner ball" onclick="get('rex','kartana')"></div>
+          <div class="column inner ball" onclick="get('rex','rufflet')"></div>
         </div>
       </div>
-      <div class="column badge">
+      <div class="column info">
         <div class="row">
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
+          <div class="column inner stats">
+            <img src="" alt="" id="pokeimg2"class="pokepic" >
+          </div>
+          <div class="column inner stats"id="pokestats2" class="pokepic" >
+            <p id="name2">NAME</p>
+            <p>HP:<span id="hp2"></span></p>
+            <p>ATK:<span id="atk2"></span></p>
+            <p>DEF:<span id="def2"></span></p>
+            <p>Abilities: <br> <span id="abilities2"></span></p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="train3">
       <div class="column trainer">
+        <h2>Rex</h2>
         <div class="row">
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
+          <div class="column inner trainerImg three">trainer3</div>
+          <div class="column inner ball" onclick="get('hassan','salandit')"></div>
+          <div class="column inner ball" onclick="get('hassan','heatmor')"></div>
+          <div class="column inner ball" onclick="get('hassan','talonflame')"></div>
         </div>
 
       </div>
-      <div class="column badge">
+      <div class="column info">
         <div class="row">
-          <div class="column inner">.column</div>
-          <div class="column inner">.column</div>
+          <div class="column inner stats">
+            <img src="" alt="" id="pokeimg3" class="pokepic">
+          </div>
+          <div class="column inner stats" id="pokestats">
+            <p id="name3">NAME</p>
+            <p>HP:<span id="hp3"></span></p>
+            <p>ATK:<span id="atk3"></span></p>
+            <p>DEF:<span id="def3"></span></p>
+            <p>Abilities: <br> <span id="abilities3"></span></p>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="row lowerText">
+      <div class="column moreInfo">
+        <h3>Description</h3>
+        <p id="description"></p>
+      </div>
+    </div>
+    <div class="container loadScreen">
+
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script type="text/javascript" src="library.js">
   </script>
+
 </body>
 
 </html>
