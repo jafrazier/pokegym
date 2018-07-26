@@ -108,6 +108,7 @@ p {
   border-radius: 0 0 1.5em 1.5em;
   background: rgba(0,0,0,.85);
   box-shadow: 5px 5px 5px rgba(255,255,255,.5);
+  overflow: scroll;
 }
 
 .trainerImg {
@@ -130,7 +131,7 @@ p {
 }
 
 .one {
-  background: url('http://network9.biz/wp-content/uploads/2014/11/Choosing-Stock-Photos-cheesy-image.jpg');
+  background: url('https://i.kym-cdn.com/photos/images/original/001/223/307/970.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

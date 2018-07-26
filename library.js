@@ -2,15 +2,15 @@ trainers = {
   john:{
     volcanion: {
       number: '721',
-      description: 'Volcanion is a primarily maroon, quadruped Pokémon with blue and yellow markings. It has large, pointed ears with blue insides and bright blue eyes. Additionally, it has bushy yellow eyebrows and a yellow mandible. There are spike-protrusions on each cheek that extend downward over its lower jaw. Volcanion\'s body has two oval segments separated by a thinner, blue portion. The front portion the body is larger and has two large, arm-like cannons on the back. These cannons are usually held together, forming a ring.'
+      description: 'Volcanion is a Fire/Water type Pokémon introduced in Generation 6. It is known as the Steam Pokémon. Volcanion is an event-exclusive Pokémon; full details are not yet known.'
     },
     drapion: {
       number: '452',
-      description: 'Drapion is a large, purple, scorpion-like Pokémon. Its eyes are a pointed shape, with blue-colored upper portions. Drapion has two small, pointed protrusions between its eyes, and one on the back on its head. Drapion also has protrusions on its jaws, two on the upper and three on the lower, with large, fang-like, white-colored features extending from its mouth'
-
+      description: 'Drapion is a Poison/Dark type Pokémon introduced in Generation 4. It is known as the Ogre Scorp Pokémon. Drapion is a purple, scorpion-like Pokémon. Its body is segmented and it stands on four pointed legs. It has two large claws at the front, the tips of which release poison, and a similar large pincer on its tail. It can rotate its head 180 degrees. Drapion typically reside in the desert, although they have been spotted in marshland. Although Drapion is Poison/Dark type, it evolves from Skorupi which is Poison/Bug type, thus loses its Bug type upon evolution - a rare occurrence for Pokémon.'
     },
     doublade: {
-      number: '680'
+      number: '680',
+      description: 'Doublade is a Steel/Ghost type Pokémon introduced in Generation 6. It is known as the Sword Pokémon. Doublade is capable of carrying out intricate attacks by telepathically coordinating its two blades to deliver twice the slice in battle.'
     }
   },
   rex:{
