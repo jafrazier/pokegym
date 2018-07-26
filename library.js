@@ -73,20 +73,29 @@ function get(name, pokemon) {
   xhttp.open('GET', 'https://pokeapi.co/api/v2/pokemon/'+ pokeNum +'/', true);
   xhttp.send();
 }
-function getTrainer1(){
-  document.getElementById('train1').classList.remove('hidden');
-  document.getElementById('train2').classList.add('hidden');
-  document.getElementById('train3').classList.add('hidden');
-}
-function getTrainer2(){
-  document.getElementById('train2').classList.remove('hidden');
-  document.getElementById('train1').classList.add('hidden');
-  document.getElementById('train3').classList.add('hidden');
+$("#train1").hide();
+$("#train2").hide();
+$("#train3").hide();
+$(".lowerText").hide();
+$(".num1").click(function(){
+    $("#train1").slideToggle(1500);
+    $(".lowerText").slideDown(3000);
+    $("#train2").hide();
+    $("#train3").hide();
+    $(".loadScreen").fadeOut(1000);
+});
+$(".num2").click(function(){
+    $("#train2").slideToggle(1500);
+    $(".lowerText").slideDown(3000);
+    $("#train3").hide();
+    $("#train1").hide();
+    $(".loadScreen").fadeOut(1000);
 
-}
-function getTrainer3(){
-  document.getElementById('train3').classList.remove('hidden');
-  document.getElementById('train1').classList.add('hidden');
-  document.getElementById('train2').classList.add('hidden');
-
-}
+});
+$(".num3").click(function(){
+    $("#train3").slideToggle(1500);
+    $(".lowerText").slideDown(3000);
+    $("#train1").hide();
+    $("#train2").hide();
+    $(".loadScreen").fadeOut(1000);
+});

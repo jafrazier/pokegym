@@ -17,7 +17,7 @@ body {
   margin-right: 2%;
   border-radius: 1.5em;
   background: rgba(0,0,0,.85);
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(255,255,255,.5);
 
 }
 .pokepic {
@@ -31,7 +31,7 @@ body {
   border: 1px black solid;
   border-radius: 1.5em;
   background: rgba(0,0,0,.85);
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(255,255,255,.5);
 
 }
 .gym {
@@ -41,7 +41,7 @@ body {
   margin-bottom: 4%;
   border-radius: 1.5em 1.5em 0 0;
   background: rgba(0,0,0,.85);
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(255,255,255,.5);
   text-align: right;
 }
 .gym h1 {
@@ -66,6 +66,7 @@ p {
   margin-bottom: .5em;
   padding: 0;
   font-size: 1.2em;
+  text-transform: uppercase;
 }
 
 .hidden {
@@ -79,7 +80,7 @@ p {
   position: relative;
   margin-top: 8em;
   background: rgba(0,0,0,.7);
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(255,255,255,.5);
   background: url('https://ih0.redbubble.net/image.224470365.5629/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u2.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -106,13 +107,13 @@ p {
   border: black 1px solid;
   border-radius: 0 0 1.5em 1.5em;
   background: rgba(0,0,0,.85);
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(255,255,255,.5);
 }
 
 .trainerImg {
   height:31vh;
   background: rgba(0,0,0,.7);
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(255,255,255,.5);
 }
 
 .stats {
@@ -145,4 +146,17 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.loadScreen {
+  height: 75vh;
+  border: black 1px solid;
+  margin-top: 0;
+  background: url('http://indiefilmto.com/wp-content/uploads/2016/07/Wallpaper2-PokemonGO-Teams-Trio.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: .8;
+  box-shadow: 5px 5px 5px rgba(255,255,255,.5);
+  border-radius: 1.5em
 }

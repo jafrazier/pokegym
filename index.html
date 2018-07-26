@@ -14,14 +14,14 @@
     <div class="row">
       <div class="column gym">
         <h1>Pokegym</h1>
-        <input type="button" value="Trainer1" class="selection" onclick="getTrainer1()">
-        <input type="button" value="Trainer2" class="selection" onclick="getTrainer2()">
-        <input type="button" value="Trainer3" class="selection" onclick="getTrainer3()">
+        <input type="button" value="Trainer1" class="selection num1" onclick="getTrainer1()">
+        <input type="button" value="Trainer2" class="selection num2" onclick="getTrainer2()">
+        <input type="button" value="Trainer3" class="selection num3" onclick="getTrainer3()">
       </div>
     </div>
-    <div class="row hidden" id="train1">
+    <div class="row" id="train1">
       <div class="column trainer">
-        <h2>NAME1</h2>
+        <h2>John</h2>
         <div class="row">
           <div class="column inner trainerImg one"></div>
           <div class="column inner ball" onclick="get('john','volcanion')"></div>
@@ -36,7 +36,7 @@
           </div>
           <div class="column inner stats" id="pokestats1">
             <p id="name1">NAME</p>
-            <p>HP:<span id="hp1">1</span></p>
+            <p>HP:<span id="hp1"></span></p>
             <p>ATK:<span id="atk1"></span></p>
             <p>DEF:<span id="def1"></span></p>
             <p>Abilities: <br> <span id="abilities1"></span></p>
@@ -45,11 +45,11 @@
 
       </div>
     </div>
-    <div class="row hidden" id="train2">
+    <div class="row" id="train2">
       <div class="column trainer">
-        <h2>NAME2</h2>
+        <h2>Hassan</h2>
         <div class="row">
-          <div class="column inner trainerImg two">trainer2</div>
+          <div class="column inner trainerImg two"></div>
           <div class="column inner ball" onclick="get('rex','giratina')"></div>
           <div class="column inner ball" onclick="get('rex','kartana')"></div>
           <div class="column inner ball" onclick="get('rex','rufflet')"></div>
@@ -62,7 +62,7 @@
           </div>
           <div class="column inner stats"id="pokestats2" class="pokepic" >
             <p id="name2">NAME</p>
-            <p>HP:<span id="hp2">2</span></p>
+            <p>HP:<span id="hp2"></span></p>
             <p>ATK:<span id="atk2"></span></p>
             <p>DEF:<span id="def2"></span></p>
             <p>Abilities: <br> <span id="abilities2"></span></p>
@@ -70,9 +70,9 @@
         </div>
       </div>
     </div>
-    <div class="row hidden" id="train3">
+    <div class="row" id="train3">
       <div class="column trainer">
-        <h2>NAME3</h2>
+        <h2>Rex</h2>
         <div class="row">
           <div class="column inner trainerImg three">trainer3</div>
           <div class="column inner ball" onclick="get('hassan','salandit')"></div>
@@ -88,7 +88,7 @@
           </div>
           <div class="column inner stats" id="pokestats">
             <p id="name3">NAME</p>
-            <p>HP:<span id="hp3">3</span></p>
+            <p>HP:<span id="hp3"></span></p>
             <p>ATK:<span id="atk3"></span></p>
             <p>DEF:<span id="def3"></span></p>
             <p>Abilities: <br> <span id="abilities3"></span></p>
@@ -96,13 +96,19 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row lowerText">
       <div class="column moreInfo">
         <h3>Description</h3>
         <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
+    <div class="container loadScreen">
+
+    </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script type="text/javascript" src="library.js">
   </script>
 
