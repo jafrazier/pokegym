@@ -30,11 +30,11 @@ trainers = {
   hassan:{
     flareon: {
       number: '136',
-      description: "Flareon's fluffy fur has a functional purpose—it releases heat into the air so that its body does not get excessively hot. This Pokémon's body temperature can rise to a maximum of 1,650 degrees Fahrenheit."
+      description: 'Flareon\'s fluffy fur has a functional purpose—it releases heat into the air so that its body does not get excessively hot. This Pokémon\'s body temperature can rise to a maximum of 1650 degrees Fahrenheit.'
     },
     vaporeon: {
       number: '134',
-      description: "Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water."
+      description: 'Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water.'
     },
     jolteon: {
       number: '135',
@@ -75,7 +75,7 @@ function get(name, pokemon) {
       document.getElementById('def3').innerHTML = myObj.stats[3].base_stat;
       document.getElementById('abilities3').innerHTML = myObj.abilities[0].ability['name'];
       document.getElementById('description').innerHTML = mypokemon['description'];
-    } 
+    }
     }
   };
   xhttp.open('GET', 'https://pokeapi.co/api/v2/pokemon/'+ pokeNum +'/', true);
@@ -105,6 +105,7 @@ $(".num2").click(function(){
     $("#train3").hide();
     $("#train1").hide();
     $(".loadScreen").fadeOut(1000);
+    $("#description").text("");
     $("body").css({"background":"url('http://sfwallpaper.com/images/cool-pokemon-pictures-13.jpg')",
                   "background-repeat":"no-repeat",
                   "background-position":"center",
@@ -123,7 +124,3 @@ $(".num3").click(function(){
                   "background-size": "cover"
                 });
 });
-
-
-
-

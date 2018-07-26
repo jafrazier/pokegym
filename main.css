@@ -131,13 +131,13 @@ p {
 }
 
 .one {
-  background: url('https://i.kym-cdn.com/photos/images/original/001/223/307/970.png');
+  background: url('http://pre13.deviantart.net/e25f/th/pre/i/2013/010/6/7/pokemon_trainer_by_cle2-d5qzmsu.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 .two {
-  background: url('http://www.babels.com/images/professional-painter-bigstock-175255048-400x400.jpg');
+  background: url('https://orig00.deviantart.net/90ab/f/2015/049/c/5/pokemon_trainer_darius_by_ravenide-d8iin81.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -160,4 +160,18 @@ p {
   opacity: .8;
   box-shadow: 5px 5px 5px rgba(255,255,255,.5);
   border-radius: 1.5em
+}
+
+button, input[type=button], input[type=reset], input[type=submit] {
+  background: rgba(0,144,255,.9);
+  border: white 1px solid;
+  box-shadow: 3px 3px 1px rgba(255,255,255,.5);
+
+}
+input[type=button]:active {
+    box-shadow: none;
+}
+button:focus, button:hover, input[type=button]:focus, input[type=button]:hover, input[type=reset]:focus, input[type=reset]:hover, input[type=submit]:focus {
+  background: rgba(0,144,255,.5);
+  border: white 1px solid;
 }
