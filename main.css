@@ -143,10 +143,10 @@ p {
   background-size: cover;
 }
 .three {
-  background: url('https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e_400x400.jpg');
+  background: url('https://i.neoseeker.com/ca/pokemon_firered_conceptart_5R47B.png');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 55%;
 }
 
 .loadScreen {
